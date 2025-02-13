@@ -3,7 +3,12 @@
 [ext_resource type="PackedScene" uid="uid://buvg7dlfjxi" path="res://scenes/card/card.tscn" id="1_5xfw3"]
 [ext_resource type="Script" path="res://scenes/battle/card_play_area/card_play_area.gd" id="1_qk8o1"]
 
-[node name="CardPlayArea" type="Node2D"]
+[node name="CardPlayArea" type="Control"]
+custom_minimum_size = Vector2(600, 300)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 600.0
+offset_bottom = 300.0
 script = ExtResource("1_qk8o1")
 
 [node name="Card" parent="." instance=ExtResource("1_5xfw3")]
