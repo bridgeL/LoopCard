@@ -1,9 +1,5 @@
-@tool
 extends Label
 
-@export var color: Color
-@export var label: String
-
-func _ready():
-	self.text = "[" + label + "]"
-	self.modulate = color
+func load_card_tip(card_tip: CardTip):
+	self.text = "[" + card_tip.name + "]"
+	self.modulate = card_tip.color

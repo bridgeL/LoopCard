@@ -1,16 +1,25 @@
 extends Node2D
 
+@export var card: Card
 
 func _ready() -> void:
 	$Button.connect("button_down", self.add_boom_tip)
 	$Button2.connect("button_down", self.remove_boom_tip)
+	card = Card.new()
+	card.fee = 1
+	card.label = Card.CardLabel.ATTACK
+	card.description = "此处展示卡牌效果"
+	card.rank = Card.CardRank.BLUE
+	card.tips = []
+	$Card.load_card(card)
 
 func add_boom_tip():
-	var tip = Tip.new()
+	var tip = CardTip.new()
 	tip.name = "爆炸"
 	tip.color = Color(1.0, 0.0, 0.0)
-	$Card.add_tip(tip)
+	card.tips.append(tip)
+	card.notify_scenes()
 
 func remove_boom_tip():
-	var i = $Card.find_tip_index("爆炸")
-	$Card.remove_tip_by_index(i)
+	card.tips.remove_at(0)
+	card.notify_scenes()

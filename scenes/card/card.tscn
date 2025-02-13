@@ -1,17 +1,15 @@
-[gd_scene load_steps=5 format=3 uid="uid://buvg7dlfjxi"]
+[gd_scene load_steps=4 format=3 uid="uid://buvg7dlfjxi"]
 
 [ext_resource type="Texture2D" uid="uid://bsugakbnrua2t" path="res://assets/card_border/3.png" id="1_5duil"]
-[ext_resource type="Script" path="res://scenes/card/card/card.gd" id="1_pg8fn"]
-[ext_resource type="Resource" uid="uid://qix2ly3ap8ec" path="res://resources/cards/test.tres" id="3_x4q4n"]
+[ext_resource type="Script" path="res://scenes/card/card.gd" id="1_pg8fn"]
 [ext_resource type="Texture2D" uid="uid://y7ys5kp2mlc6" path="res://assets/card_face/1.png" id="5_gsfph"]
 
 [node name="Card" type="Sprite2D"]
 position = Vector2(100, 150)
 texture = ExtResource("1_5duil")
 script = ExtResource("1_pg8fn")
-card = ExtResource("3_x4q4n")
 
-[node name="Title" type="Label" parent="."]
+[node name="Name" type="Label" parent="."]
 offset_left = -20.0
 offset_top = -135.0
 offset_right = 20.0
@@ -33,14 +31,14 @@ grow_vertical = 2
 pivot_offset = Vector2(50, 50)
 texture = ExtResource("5_gsfph")
 
-[node name="Content" type="Label" parent="."]
+[node name="Description" type="Label" parent="."]
 offset_left = -63.0
 offset_top = 85.0
 offset_right = 65.0
 offset_bottom = 108.0
 text = "免疫所有debug"
 
-[node name="Tips" type="HBoxContainer" parent="."]
+[node name="Tips" type="HFlowContainer" parent="."]
 offset_left = -71.0
 offset_top = 9.0
 offset_right = 72.0
