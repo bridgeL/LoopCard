@@ -8,10 +8,10 @@ func load_card(card: Card):
 	card.bind_scene(self, "update_card")
 
 func update_card(card: Card):
-	$Name.text = card.get_card_name()
-	$Face.texture = card.get_card_face()
+	$Name.text = card.name
+	$Face.texture = card.card_face
 	$Description.text = card.description
-	texture = card.get_card_bg_img()
+	texture = card.card_bg_img
 	
 	for child in $Tips.get_children():
 		child.free()

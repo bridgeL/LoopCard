@@ -1,10 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://de7i8vf634vvd"]
+[gd_scene load_steps=5 format=3 uid="uid://de7i8vf634vvd"]
 
 [ext_resource type="PackedScene" uid="uid://buvg7dlfjxi" path="res://scenes/card/card.tscn" id="1_opw54"]
 [ext_resource type="Script" path="res://tests/test_card/test_card.gd" id="1_ydjex"]
+[ext_resource type="Resource" uid="uid://bscgjb1h6roxr" path="res://resources/cards/green/attack.tres" id="2_alflb"]
+[ext_resource type="Resource" uid="uid://c43ykd6s52nqu" path="res://resources/card_tips/boom.tres" id="3_5j8ou"]
 
 [node name="TestCard" type="Node2D"]
 script = ExtResource("1_ydjex")
+card = ExtResource("2_alflb")
+card_tip = ExtResource("3_5j8ou")
 
 [node name="Card" parent="." instance=ExtResource("1_opw54")]
 position = Vector2(133, 174)

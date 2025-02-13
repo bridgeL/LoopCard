@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Card" load_steps=5 format=3 uid="uid://bscgjb1h6roxr"]
+
+[ext_resource type="Texture2D" uid="uid://bsugakbnrua2t" path="res://assets/card_border/3.png" id="1_krd3j"]
+[ext_resource type="Texture2D" uid="uid://y7ys5kp2mlc6" path="res://assets/card_face/1.png" id="2_ebsst"]
+[ext_resource type="Script" path="res://scripts/types/card.gd" id="3_608m6"]
+[ext_resource type="Script" path="res://scripts/types/card_tip.gd" id="4_lp6df"]
+
+[resource]
+script = ExtResource("3_608m6")
+label = 0
+rank = 0
+name = "攻击"
+fee = 1
+description = "造成3点伤害"
+tips = Array[ExtResource("4_lp6df")]([])
+card_face = ExtResource("2_ebsst")
+card_bg_img = ExtResource("1_krd3j")

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="CardTip" load_steps=2 format=3 uid="uid://c43ykd6s52nqu"]
+
+[ext_resource type="Script" path="res://scripts/types/card_tip.gd" id="1_2hw7y"]
+
+[resource]
+script = ExtResource("1_2hw7y")
+label = 0
+name = "爆炸"
+color = Color(0.909804, 0, 0, 1)
+description = "爆炸就是艺术"
