@@ -1,0 +1,55 @@
+[gd_scene load_steps=2 format=3 uid="uid://bp0gwj001amn6"]
+
+[ext_resource type="Script" path="res://scenes/player/player.gd" id="1_labno"]
+
+[node name="Player" type="Node2D"]
+script = ExtResource("1_labno")
+
+[node name="HP" type="Label" parent="."]
+offset_right = 50.0
+offset_bottom = 23.0
+text = "生命: 0"
+
+[node name="SD" type="Label" parent="."]
+offset_top = 23.0
+offset_right = 50.0
+offset_bottom = 46.0
+text = "护盾: 0"
+
+[node name="STR" type="Label" parent="."]
+offset_top = 46.0
+offset_right = 50.0
+offset_bottom = 69.0
+text = "力量: 0"
+
+[node name="INT" type="Label" parent="."]
+offset_top = 69.0
+offset_right = 50.0
+offset_bottom = 92.0
+text = "智力: 0"
+
+[node name="AGI" type="Label" parent="."]
+offset_top = 92.0
+offset_right = 50.0
+offset_bottom = 115.0
+text = "敏捷: 0"
+
+[node name="AP" type="Label" parent="."]
+offset_left = 94.0
+offset_right = 160.0
+offset_bottom = 23.0
+text = "行动力: 0"
+
+[node name="FP" type="Label" parent="."]
+offset_left = 94.0
+offset_top = 23.0
+offset_right = 160.0
+offset_bottom = 46.0
+text = "专注力: 0"
+
+[node name="ExFP" type="Label" parent="."]
+offset_left = 94.0
+offset_top = 46.0
+offset_right = 192.0
+offset_bottom = 69.0
+text = "额外专注力: 0"

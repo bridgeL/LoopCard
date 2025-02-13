@@ -5,9 +5,9 @@ class_name Card
 enum CardRank { GREEN = 1, BLUE = 2, GOLDEN = 3, RED = 4 }
 enum CardLabel { ATTACK = 1, SHIELD = 2, HEAL = 3, SWITCH = 4 }
 
-@export var title: String
-@export var content: String
-@export var rank: CardRank
+@export var name: String
+@export var description: String
+@export var fee: int
 @export var label: CardLabel
 @export var tips: Array[Tip]
 
