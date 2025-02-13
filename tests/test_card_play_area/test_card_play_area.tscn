@@ -1,0 +1,16 @@
+[gd_scene load_steps=8 format=3 uid="uid://chnltg840qlw5"]
+
+[ext_resource type="Script" path="res://tests/test_card_play_area/test_card_play_area.gd" id="1_517a3"]
+[ext_resource type="Script" path="res://scripts/types/card.gd" id="2_44apf"]
+[ext_resource type="PackedScene" uid="uid://0vfaw5vvxb0j" path="res://scenes/battle/card_play_area/card_play_area.tscn" id="2_f4v07"]
+[ext_resource type="Resource" uid="uid://bscgjb1h6roxr" path="res://resources/cards/green/attack.tres" id="3_ku8md"]
+[ext_resource type="Resource" uid="uid://cxqc4b427vluy" path="res://resources/cards/green/shield.tres" id="4_x3sdj"]
+[ext_resource type="Resource" uid="uid://b5youno0eimg4" path="res://resources/cards/green/switch.tres" id="5_6ofxh"]
+[ext_resource type="Resource" uid="uid://csgi4ehymp5wr" path="res://resources/cards/green/heal.tres" id="5_qiawr"]
+
+[node name="TestCardPlayArea" type="Node2D"]
+script = ExtResource("1_517a3")
+cards = Array[ExtResource("2_44apf")]([ExtResource("3_ku8md"), ExtResource("4_x3sdj"), ExtResource("5_qiawr"), ExtResource("4_x3sdj")])
+card2 = ExtResource("5_6ofxh")
+
+[node name="CardPlayArea" parent="." instance=ExtResource("2_f4v07")]

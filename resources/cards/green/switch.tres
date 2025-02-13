@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Card" load_steps=5 format=3 uid="uid://b5youno0eimg4"]
+
+[ext_resource type="Texture2D" uid="uid://bsugakbnrua2t" path="res://assets/card_border/3.png" id="1_nml8p"]
+[ext_resource type="Texture2D" uid="uid://bdlhd0i2hbdps" path="res://assets/card_face/4.png" id="2_ns1bm"]
+[ext_resource type="Script" path="res://scripts/types/card.gd" id="3_cq4dm"]
+[ext_resource type="Script" path="res://scripts/types/card_tip.gd" id="4_fbn6q"]
+
+[resource]
+script = ExtResource("3_cq4dm")
+label = 3
+rank = 0
+name = "切牌"
+fee = 1
+description = "回收当前牌，翻开牌堆顶第一张牌"
+tips = Array[ExtResource("4_fbn6q")]([])
+card_face = ExtResource("2_ns1bm")
+card_bg_img = ExtResource("1_nml8p")

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Card" load_steps=5 format=3 uid="uid://csgi4ehymp5wr"]
+
+[ext_resource type="Texture2D" uid="uid://bsugakbnrua2t" path="res://assets/card_border/3.png" id="1_mur78"]
+[ext_resource type="Texture2D" uid="uid://dy7113qr82dau" path="res://assets/card_face/3.png" id="2_5hsqu"]
+[ext_resource type="Script" path="res://scripts/types/card.gd" id="3_ae77j"]
+[ext_resource type="Script" path="res://scripts/types/card_tip.gd" id="4_n3ovt"]
+
+[resource]
+script = ExtResource("3_ae77j")
+label = 2
+rank = 0
+name = "治疗"
+fee = 1
+description = "回复3点生命"
+tips = Array[ExtResource("4_n3ovt")]([])
+card_face = ExtResource("2_5hsqu")
+card_bg_img = ExtResource("1_mur78")

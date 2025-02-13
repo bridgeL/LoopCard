@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Card" load_steps=5 format=3 uid="uid://cxqc4b427vluy"]
+
+[ext_resource type="Texture2D" uid="uid://bsugakbnrua2t" path="res://assets/card_border/3.png" id="1_ri2m2"]
+[ext_resource type="Texture2D" uid="uid://bngbamv0v6ygp" path="res://assets/card_face/2.png" id="2_sop7v"]
+[ext_resource type="Script" path="res://scripts/types/card.gd" id="3_aiidh"]
+[ext_resource type="Script" path="res://scripts/types/card_tip.gd" id="4_jc0wg"]
+
+[resource]
+script = ExtResource("3_aiidh")
+label = 1
+rank = 0
+name = "防御"
+fee = 1
+description = "获得3点护盾"
+tips = Array[ExtResource("4_jc0wg")]([])
+card_face = ExtResource("2_sop7v")
+card_bg_img = ExtResource("1_ri2m2")
