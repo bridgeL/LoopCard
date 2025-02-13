@@ -25,7 +25,3 @@ func notify_scenes():
 		var node = _nodes[i]
 		var func_name = _func_names[i]
 		node.call(func_name, self)
-
-func delay(seconds):
-	await _nodes[0].get_tree().create_timer(seconds).timeout
-	

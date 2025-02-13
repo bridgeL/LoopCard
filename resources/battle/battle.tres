@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Battle" load_steps=5 format=3 uid="uid://c02a1gtxl0fl"]
+
+[ext_resource type="Resource" uid="uid://87edscltcxj" path="res://resources/battle/card_deck.tres" id="1_3hvki"]
+[ext_resource type="Resource" uid="uid://uyahyevt1b4s" path="res://resources/battle/monster.tres" id="2_ub7f7"]
+[ext_resource type="Resource" uid="uid://dofn88cvl1ebe" path="res://resources/battle/player.tres" id="3_bpd07"]
+[ext_resource type="Script" path="res://scripts/types/battle.gd" id="8_ql268"]
+
+[resource]
+script = ExtResource("8_ql268")
+monster = ExtResource("2_ub7f7")
+player = ExtResource("3_bpd07")
+card_deck = ExtResource("1_3hvki")
+is_player_turn = true
+is_battle_end = false

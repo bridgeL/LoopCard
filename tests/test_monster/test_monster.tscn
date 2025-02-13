@@ -1,10 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://0qooo1moed5t"]
+[gd_scene load_steps=4 format=3 uid="uid://0qooo1moed5t"]
 
 [ext_resource type="Script" path="res://tests/test_monster/test_monster.gd" id="1_iwwxk"]
 [ext_resource type="PackedScene" uid="uid://xcsdrhi1s7v" path="res://scenes/monster/monster.tscn" id="2_32iiy"]
+[ext_resource type="Resource" uid="uid://uyahyevt1b4s" path="res://resources/battle/monster.tres" id="2_kr8l4"]
 
 [node name="TestMonster" type="Node2D"]
 script = ExtResource("1_iwwxk")
+monster = ExtResource("2_kr8l4")
 
 [node name="Monster" parent="." instance=ExtResource("2_32iiy")]
 

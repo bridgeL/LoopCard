@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" path="res://tests/test_battle/test_battle.gd" id="1_7gj07"]
 [ext_resource type="PackedScene" uid="uid://csocnho1nmr12" path="res://scenes/battle/battle.tscn" id="1_eoykb"]
-[ext_resource type="Resource" uid="uid://66npggn6ife4" path="res://resources/battles/base.tres" id="2_5bpd4"]
+[ext_resource type="Resource" uid="uid://c02a1gtxl0fl" path="res://resources/battle/battle.tres" id="2_hfqjo"]
 
 [node name="TestBattle" type="Node2D"]
 script = ExtResource("1_7gj07")
-battle = ExtResource("2_5bpd4")
+battle = ExtResource("2_hfqjo")
 
 [node name="Battle" parent="." instance=ExtResource("1_eoykb")]

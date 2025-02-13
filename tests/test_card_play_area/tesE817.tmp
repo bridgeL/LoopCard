@@ -1,11 +1,11 @@
 [gd_scene load_steps=4 format=3 uid="uid://chnltg840qlw5"]
 
 [ext_resource type="Script" path="res://tests/test_card_play_area/test_card_play_area.gd" id="1_517a3"]
-[ext_resource type="Resource" uid="uid://c02a1gtxl0fl" path="res://resources/battle/battle.tres" id="2_2oh44"]
+[ext_resource type="Resource" uid="uid://66npggn6ife4" path="res://resources/battles/base.tres" id="2_8hjl0"]
 [ext_resource type="PackedScene" uid="uid://0vfaw5vvxb0j" path="res://scenes/battle/card_play_area/card_play_area.tscn" id="2_f4v07"]
 
 [node name="TestCardPlayArea" type="Node2D"]
 script = ExtResource("1_517a3")
-battle = ExtResource("2_2oh44")
+battle = ExtResource("2_8hjl0")
 
 [node name="CardPlayArea" parent="." instance=ExtResource("2_f4v07")]

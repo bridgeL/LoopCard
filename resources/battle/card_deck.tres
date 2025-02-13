@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CardDeck" load_steps=6 format=3 uid="uid://87edscltcxj"]
+
+[ext_resource type="Resource" uid="uid://b5youno0eimg4" path="res://resources/cards/green/switch.tres" id="1_vg6kf"]
+[ext_resource type="Script" path="res://scripts/types/card.gd" id="2_shge6"]
+[ext_resource type="Resource" uid="uid://bscgjb1h6roxr" path="res://resources/cards/green/attack.tres" id="3_yn54m"]
+[ext_resource type="Resource" uid="uid://cxqc4b427vluy" path="res://resources/cards/green/shield.tres" id="4_ojmew"]
+[ext_resource type="Script" path="res://scripts/types/card_deck.gd" id="5_kdbiq"]
+
+[resource]
+script = ExtResource("5_kdbiq")
+cards = Array[ExtResource("2_shge6")]([ExtResource("3_yn54m"), ExtResource("4_ojmew"), ExtResource("3_yn54m"), ExtResource("4_ojmew"), ExtResource("3_yn54m"), ExtResource("4_ojmew"), ExtResource("3_yn54m"), ExtResource("4_ojmew")])
+card2 = ExtResource("1_vg6kf")
+card_index = 0

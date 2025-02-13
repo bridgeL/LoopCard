@@ -33,16 +33,13 @@ func remove_tip(_tip: CardTip):
 	tips.remove_at(i)
 	notify_scenes()
 	
-func run_card(battle: Battle):
-	if battle.player.focus < 1:
-		return
-	if battle.player.action_points < fee:
-		return
+func play(battle: Battle):
+	print("打出", name)
 		
-	battle.player.focus -= 1
-	battle.player.action_points -= fee
-	battle.player.notify_scenes()
-	
 	match(label):
-		CardLabel.ATTACK: battle.monster.be_attacked(3)
-		CardLabel.SHIELD: battle.player.get_shield(3)
+		CardLabel.ATTACK: 
+			battle.monster.be_attacked(3)
+			battle.monster.notify_scenes()
+		CardLabel.SHIELD: 
+			battle.player.get_shield(3)
+			battle.player.notify_scenes()
