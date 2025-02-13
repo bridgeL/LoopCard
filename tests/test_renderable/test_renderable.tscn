@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4js2u7w7elwl"]
+
+[ext_resource type="Script" path="res://tests/test_renderable/test_renderable.gd" id="1_33hxb"]
+
+[node name="TestRenderable" type="Node2D"]
+script = ExtResource("1_33hxb")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "功德：0"
+
+[node name="Button" type="Button" parent="."]
+offset_left = 1.0
+offset_top = 44.0
+offset_right = 67.0
+offset_bottom = 75.0
+text = "点我加1"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 149.0
+offset_top = 45.0
+offset_right = 221.0
+offset_bottom = 76.0
+text = "点我解绑"
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 71.0
+offset_top = 46.0
+offset_right = 143.0
+offset_bottom = 77.0
+text = "点我绑定
+"

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bmhlkjbuh56py"]
+
+[ext_resource type="Script" path="res://scenes/card/tip/tip.gd" id="1_fha2r"]
+
+[node name="Tip" type="Label"]
+script = ExtResource("1_fha2r")
+color = null
+label = null
