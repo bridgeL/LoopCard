@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://csocnho1nmr12"]
+
+[ext_resource type="Script" path="res://scenes/battle/battle.gd" id="1_2edv4"]
+[ext_resource type="PackedScene" uid="uid://0vfaw5vvxb0j" path="res://scenes/battle/card_play_area/card_play_area.tscn" id="1_iqsu1"]
+[ext_resource type="PackedScene" uid="uid://xcsdrhi1s7v" path="res://scenes/monster/monster.tscn" id="2_06eos"]
+[ext_resource type="PackedScene" uid="uid://bp0gwj001amn6" path="res://scenes/player/player.tscn" id="3_fr7ac"]
+
+[node name="Battle" type="Node2D"]
+script = ExtResource("1_2edv4")
+
+[node name="CardPlayArea" parent="." instance=ExtResource("1_iqsu1")]
+offset_top = 227.0
+offset_bottom = 527.0
+
+[node name="Monster" parent="." instance=ExtResource("2_06eos")]
+position = Vector2(311, 0)
+
+[node name="Player" parent="." instance=ExtResource("3_fr7ac")]

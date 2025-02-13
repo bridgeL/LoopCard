@@ -12,7 +12,17 @@ offset_bottom = 300.0
 script = ExtResource("1_qk8o1")
 
 [node name="Card" parent="." instance=ExtResource("1_5xfw3")]
+layout_mode = 0
 
 [node name="Card2" parent="." instance=ExtResource("1_5xfw3")]
+layout_mode = 0
 offset_left = 200.0
 offset_right = 400.0
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 424.0
+offset_top = 17.0
+offset_right = 496.0
+offset_bottom = 48.0
+text = "结束回合"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Monster" load_steps=2 format=3 uid="uid://uyahyevt1b4s"]
+
+[ext_resource type="Script" path="res://scripts/types/monster.gd" id="1_eki84"]
+
+[resource]
+script = ExtResource("1_eki84")
+health = 10
+shield = 0
+name = "大魔王"
+intention = "攻击"
