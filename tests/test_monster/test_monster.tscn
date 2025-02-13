@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://0qooo1moed5t"]
+
+[ext_resource type="Script" path="res://tests/test_monster/test_monster.gd" id="1_iwwxk"]
+[ext_resource type="PackedScene" uid="uid://xcsdrhi1s7v" path="res://scenes/monster/monster.tscn" id="2_32iiy"]
+
+[node name="TestMonster" type="Node2D"]
+script = ExtResource("1_iwwxk")
+
+[node name="Monster" parent="." instance=ExtResource("2_32iiy")]
+
+[node name="Button" type="Button" parent="."]
+offset_left = 64.0
+offset_top = 23.0
+offset_right = 104.0
+offset_bottom = 54.0
+text = "加血"

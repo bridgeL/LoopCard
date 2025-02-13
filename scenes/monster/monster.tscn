@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://xcsdrhi1s7v"]
+
+[ext_resource type="Script" path="res://scenes/monster/monster.gd" id="1_58hr8"]
+
+[node name="Monster" type="Node2D"]
+script = ExtResource("1_58hr8")
+
+[node name="HP" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "生命: 0
+"
+
+[node name="SD" type="Label" parent="."]
+offset_top = 23.0
+offset_right = 50.0
+offset_bottom = 46.0
+text = "护盾: 0"
+
+[node name="Name" type="Label" parent="."]
+offset_top = 46.0
+offset_right = 40.0
+offset_bottom = 69.0
+
+[node name="Intention" type="Label" parent="."]
+offset_top = 69.0
+offset_right = 40.0
+offset_bottom = 92.0
